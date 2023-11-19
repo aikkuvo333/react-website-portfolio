@@ -34,13 +34,13 @@ This React-based portfolio website aims to highlight my professional background,
 1. Clone the repository:
 
    ```bash
-   git clone xxx
+   git clone https://github.com/aikkuvo333/react-website-portfolio
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd portfolio-website
+   cd react-website-portfolio
    ```
 
 3. Install dependencies:
