@@ -2,8 +2,8 @@ import React from 'react';
 import './Button.css';
 import { Link } from 'react-router-dom';
 
-const STYLES = ['btn--primary', 'btn-outline'];
-const SIZES = ['btn--medium', 'btn-large'];
+const STYLES = ['btn--white', 'btn--outline'];
+const SIZES = ['btn--medium', 'btn--large'];
 
 export const Button = ({
     children, 
@@ -12,25 +12,14 @@ export const Button = ({
     buttonStyle, 
     buttonSize
 }) => {
-    const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0]; //necessary?
-
-    const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0]; //necessary?
+    const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
+    const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0]; 
 
     return (
         <Link to='/contact' className='btn-mobile'>
-            <button className={'btn '}>
+            <button className={`btn ${checkButtonStyle} ${checkButtonSize}`} onClick={onClick} type={type}>
                 {children}
             </button>
         </Link>
     )
 };
-
-function Button() {
-  return (
-    <div>
-      
-    </div>
-  )
-}
-
-export default Button
