@@ -4,8 +4,8 @@ import './Cards.css';
 
 function Cards() {
   return (
-    <div className='cards'>
-    <h1>My latest projects</h1>
+    <div className='cards' id='projects_section'>
+    <h1>Projects</h1>
     <div className='cards__container'>
       <div className='cards__wrapper'>
           <ul className='cards__items'>

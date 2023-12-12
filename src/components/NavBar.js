@@ -26,11 +26,20 @@ function NavBar() {
 
   window.addEventListener('resize', showButton);
 
+  const scrollToView = (id) => {
+    const sectionById = document.getElementById(id);
+    if (sectionById) {
+      sectionById.scrollIntoView({behavior: 'smooth'});
+    } else {
+      console.log("Cant scroll to " + id + "view")
+    }
+  };
+
   return (
     <>
      <nav className='navbar'>
         <div className='navbar-container'>
-            <Link to="/" className='navbar-logo' onClick={closeMobileMenu}>
+            <Link to="/" className='navbar-logo' onClick={() => {closeMobileMenu(); scrollToView('home_section');}}>
                AIVAN VO 
             </Link>
             <div className='menu-icon' onClick={openMobileMenu}>
@@ -38,22 +47,25 @@ function NavBar() {
             </div>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
               <li className='nav-item'>
-                <Link to='/' className='nav-links' onClick={closeMobileMenu}> 
+                <Link to='/' className='nav-links' onClick={() => {closeMobileMenu(); scrollToView('home_section');}}> 
                   Home
                 </Link>
               </li>
               <li className='nav-item'>
-                <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
+                <Link className='nav-links' onClick={() => {closeMobileMenu(); scrollToView('projects_section');}}>
                   Projects
                 </Link>
               </li>
               <li className='nav-item'>
-                <Link to='/contact' className='nav-links-mobile' onClick={closeMobileMenu}>
+                {/* <Link className='nav-links-mobile' onClick={() => {closeMobileMenu(); scrollToView('contact_section');}}>
+                  Contact
+                </Link> */}
+                <Link className='nav-links-mobile' onClick={() => {closeMobileMenu(); scrollToView('contact_section');}}>
                   Contact
                 </Link>
               </li>
             </ul>
-            {button && <Button buttonStyle='btn--outline'>Contact</Button>}
+            {button && <Button buttonStyle='btn--outline' onClick={() => scrollToView('contact_section')}>Contact</Button>}
         </div>
      </nav>
     </>
