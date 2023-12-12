@@ -2,11 +2,10 @@ import React from 'react';
 import '../App.js';
 import ContactForm from '../components/ContactForm.js';
 import './Contact.css';
-import { Link } from 'react-router-dom';
 
 export default function Contact() {
   return (
-    <div>
+    <div id='contact_section'>
       <div>
         <h1>Contact</h1>
         <p>Want to work together on a project?</p>
@@ -19,13 +18,13 @@ export default function Contact() {
         <div>
           <ul>
             <li>
-              <Link>aivan.vo@metropolia.fi</Link>
+              <a href='mailto:aivan.vo@metropolia.fi'>aivan.vo@metropolia.fi</a>
             </li>
             <li>
-              <Link>LinkedIn</Link>
+              <a href='https://www.linkedin.com/in/aivan-vo/'>LinkedIn</a>
             </li>
             <li>
-              <Link>Github</Link>
+              <a href='https://www.github.com/aikkuvo333/'>Github</a>
             </li>
           </ul>
         </div>
