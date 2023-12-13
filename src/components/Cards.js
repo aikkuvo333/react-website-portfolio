@@ -10,23 +10,35 @@ function Cards() {
       <div className='cards__wrapper'>
           <ul className='cards__items'>
           <CardItem src='/images/image2.jpg' 
-                text='Explore the hidden' 
-                label='adventure' 
+                text='Ecolounge' 
+                label='product design' 
                 path='/projects'></CardItem>
             <CardItem src='/images/image2.jpg' 
-                text='Explore the hidden' 
-                label='adventure' 
+                text='Chess game application' 
+                label='java' 
                 path='/projects'></CardItem>
           </ul>
           <ul className='cards__items'>
           <CardItem src='/images/image2.jpg' 
-                text='Explore the hidden' 
-                label='adventure' 
+                text='Pharmacy capacity simulator' 
+                label='java' 
                 path='/projects'></CardItem>
             <CardItem
               src='images/image2.jpg'
-              text='Experience Football on Top of the Himilayan Mountains'
-              label='Adventure'
+              text='Website Behaviour Tracking'
+              label='google analytics'
+              path='/projects'
+            />
+          </ul>
+          <ul className='cards__items'>
+          <CardItem src='/images/image2.jpg' 
+                text='Track Calorie tracker' 
+                label='vue' 
+                path='/projects'></CardItem>
+            <CardItem
+              src='images/image2.jpg'
+              text='Project'
+              label=''
               path='/projects'
             />
           </ul>
