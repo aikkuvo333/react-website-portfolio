@@ -18,9 +18,6 @@ export default function Contact() {
         <div>
           <ul>
             <li>
-              <a href='mailto:aivan.vo@metropolia.fi'>aivan.vo@metropolia.fi</a>
-            </li>
-            <li>
               <a href='https://www.linkedin.com/in/aivan-vo/'>LinkedIn</a>
             </li>
             <li>
