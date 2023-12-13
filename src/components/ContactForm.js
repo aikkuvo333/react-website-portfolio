@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import './ContactForm.css';
 
 export const ContactForm = () => {
   const form = useRef();
@@ -32,14 +33,14 @@ export const ContactForm = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
+    <form className='contact_form' ref={form} onSubmit={sendEmail}>
       <label>Name</label>
-      <input type="text" name="from_name" value={formData.from_name} onChange={handleChange} />
+      <input className='from_name' type="text" name="from_name" value={formData.from_name} onChange={handleChange} />
       <label>Email</label>
-      <input type="email" name="from_email" value={formData.from_email} onChange={handleChange}/>
+      <input className='from_email' type="email" name="from_email" value={formData.from_email} onChange={handleChange}/>
       <label>Message</label>
-      <textarea name="message" value={formData.message} onChange={handleChange}/>
-      <input type="submit" value="Send" />
+      <textarea className='msg' name="message" value={formData.message} onChange={handleChange}/>
+      <input type="submit" value="Submit" />
     </form>
   );
 };
