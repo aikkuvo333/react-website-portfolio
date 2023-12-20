@@ -1,6 +1,6 @@
 import React from 'react';
 import './Lightbox.css'; 
-import { Button } from './Button';
+import { ContactButton } from './ContactButton';
 
 function Lightbox(props) {
 
@@ -12,7 +12,7 @@ function Lightbox(props) {
     <div>
           <div className="backdrop" onClick={closeLightbox}/>
           <div className="lightbox">
-          <Button buttonStyle='btn--white' className="close" onClick={closeLightbox}>Close</Button>
+          <ContactButton buttonStyle='btn--white' className="close" onClick={closeLightbox}>Close</ContactButton>
             <div className="lightbox-content">
               <h2>{props.title}</h2>
               <div className='projectDetails_image'>

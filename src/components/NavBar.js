@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes, faBars } from '@fortawesome/free-solid-svg-icons';
-import { Button } from './Button';
+import { ContactButton } from './ContactButton';
 import './NavBar.css';
 
 function NavBar() {
@@ -62,7 +62,7 @@ function NavBar() {
                 </Link>
               </li>
             </ul>
-            {button && <Button buttonStyle='btn--outline' onClick={() => scrollToView('contact_section')}>Contact</Button>}
+            {button && <ContactButton buttonStyle='btn--outline' onClick={() => scrollToView('contact_section')}>Contact</ContactButton>}
         </div>
      </nav>
     </>
