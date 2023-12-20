@@ -10,13 +10,13 @@ function Lightbox(props) {
 
   return (
     <div>
-          <div className="backdrop" onClick={closeLightbox}></div>
+          <div className="backdrop" onClick={closeLightbox}/>
           <div className="lightbox">
           <Button buttonStyle='btn--white' className="close" onClick={closeLightbox}>Close</Button>
             <div className="lightbox-content">
               <h2>{props.title}</h2>
               <div className='projectDetails_image'>
-                <img alt='Project' src={props.src}></img>
+                <img alt='Project' src={props.src}/>
               </div>
               <div className='projectDetails_description'>
                 <h2 className='projectDetails_contentTitle'>Project Overview</h2>

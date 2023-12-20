@@ -20,7 +20,7 @@ function NavBar() {
     }
   };
 
-  useEffect(() => { //to show button only once (fixing the error))
+  useEffect(() => { //to show button only once (fixing the error)
     showButton();
   }, []);
 
@@ -43,7 +43,7 @@ function NavBar() {
                AIVAN VO 
             </Link>
             <div className='menu-icon' onClick={openMobileMenu}>
-              <FontAwesomeIcon icon={click ? faTimes : faBars} className={click ? 'fas fa-times' : 'fas fa-bars'}></FontAwesomeIcon>
+              <FontAwesomeIcon icon={click ? faTimes : faBars} className={click ? 'fas fa-times' : 'fas fa-bars'}/>
             </div>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
               <li className='nav-item'>
@@ -57,9 +57,6 @@ function NavBar() {
                 </Link>
               </li>
               <li className='nav-item'>
-                {/* <Link className='nav-links-mobile' onClick={() => {closeMobileMenu(); scrollToView('contact_section');}}>
-                  Contact
-                </Link> */}
                 <Link className='nav-links-mobile' onClick={() => {closeMobileMenu(); scrollToView('contact_section');}}>
                   Contact
                 </Link>

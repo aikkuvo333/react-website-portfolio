@@ -4,7 +4,7 @@ import MainSection from '../components/MainSection';
 import Cards from '../components/Cards';
 import Contact from './Contact';
 
-function Home() {
+export default function Home() {
   return (
     <div id='home_section'>
       <MainSection></MainSection>
@@ -13,4 +13,3 @@ function Home() {
     </div>
   );
 }
-export default Home;

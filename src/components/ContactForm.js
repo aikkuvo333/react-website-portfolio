@@ -35,7 +35,7 @@ export const ContactForm = () => {
   return (
     <form className='contact_form' ref={form} onSubmit={sendEmail}>
       <label>Name</label>
-      <input className='from_name' type="text" name="from_name" value={formData.from_name} onChange={handleChange} />
+      <input className='from_name' type="text" name="from_name" value={formData.from_name} onChange={handleChange}/>
       <label>Email</label>
       <input className='from_email' type="email" name="from_email" value={formData.from_email} onChange={handleChange}/>
       <label>Message</label>

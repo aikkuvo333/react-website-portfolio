@@ -19,7 +19,7 @@ function CardItem(props) {
       <li className='cards__item'>
         <Link className='cards__item__link' onClick={openLightbox}>
             <figure className='cards__item__pic-wrap' data-category={props.label}>
-                <img src={props.src} alt='Description' className='cards__item__img'></img>
+                <img src={props.src} alt='Description' className='cards__item__img'/>
             </figure>
             <div className='cards__item__info'>
                 <h5 className='cards__item__text'>{props.title}</h5>

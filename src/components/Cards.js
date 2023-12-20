@@ -26,14 +26,14 @@ function Cards() {
                 The client has incorporated our prototype into their ongoing research and development initiatives, underscoring the projects significance and impact'
                 link='https://www.instagram.com/ecolounge_vlc/'
                 linkTitle='Instagram'
-                skills='product degign'></CardItem>
+                skills='product degign'/>
             <CardItem src='/images/image2.jpg' 
                 title='Chess game application' 
                 label='java'
                 details=''
                 link=''
                 linkTitle=''
-                skills=''></CardItem>
+                skills=''/>
           </ul>
           <ul className='cards__items'>
           <CardItem src='/images/image2.jpg' 
@@ -42,7 +42,7 @@ function Cards() {
                 details=''
                 link=''
                 linkTitle=''
-                skills=''></CardItem>
+                skills=''/>
             <CardItem
               src='images/image2.jpg'
               title='Website Behaviour Tracking'
@@ -50,7 +50,7 @@ function Cards() {
               details=''
                 link=''
                 linkTitle=''
-                skills=''></CardItem>
+                skills=''/>
           </ul>
           <ul className='cards__items'>
           <CardItem src='/images/image2.jpg' 
@@ -59,7 +59,7 @@ function Cards() {
                 details=''
                 link=''
                 linkTitle=''
-                skills=''></CardItem>
+                skills=''/>
             <CardItem
               src='images/image2.jpg'
               title='Project'
