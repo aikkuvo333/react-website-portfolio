@@ -1,4 +1,5 @@
-  .from_name, .from_email {
+  .from_name,
+  .from_email {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -10,10 +11,11 @@
 
   .from_name::placeholder,
   .from_email::placeholder,
-.msg::placeholder {
-  color: #a5a5a5; /* Change placeholder text color */
-}
-  
+  .msg::placeholder {
+    color: #a5a5a5;
+    /* Change placeholder text color */
+  }
+
   .msg {
     width: 100%;
     background-color: #ffffff;
@@ -24,10 +26,10 @@
     border-radius: 4px;
     cursor: pointer;
   }
-  
+
   .contact_form {
     border-radius: 10px;
     background-color: #f6dddd;
     padding: 30px;
-    
+
   }

@@ -7,12 +7,12 @@ import Home from './pages/Home';
 function App() {
   return (
     <>
-    <Router>
-     <NavBar/>
-     <Routes>
-     <Route path='/' exact Component={Home}/>
-     </Routes>
-    </Router>
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route path='/' exact Component={Home} />
+        </Routes>
+      </Router>
     </>
   )
 }
