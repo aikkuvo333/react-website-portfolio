@@ -1,6 +1,7 @@
 import React from 'react';
 import './Lightbox.css'; 
-import { ContactButton } from './ContactButton';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons';
 
 function Lightbox(props) {
 
@@ -12,7 +13,9 @@ function Lightbox(props) {
     <div>
           <div className="backdrop" onClick={closeLightbox}/>
           <div className="lightbox">
-          <ContactButton buttonStyle='btn--white' className="close" onClick={closeLightbox}>Close</ContactButton>
+            <div className='lightbox-top'>
+              <FontAwesomeIcon icon={faArrowCircleLeft} className="close" onClick={closeLightbox}/>
+            </div>
             <div className="lightbox-content">
               <h2>{props.title}</h2>
               <div className='projectDetails_image'>
@@ -30,7 +33,7 @@ function Lightbox(props) {
                 </div>
               </div>
               <div className='projectDetails_links'>
-                <h2 className='projectDetails_links'>Links</h2>
+                <h2 className='projectDetails_links'>Website</h2>
                 <a href={props.link} target="_blank" rel="noreferrer" aria-label='open website link'>{props.linkTitle}</a>
               </div>
             </div>
