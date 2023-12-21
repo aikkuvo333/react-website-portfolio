@@ -35,11 +35,11 @@ export const ContactForm = () => {
   return (
     <form className='contact_form' ref={form} onSubmit={sendEmail}>
       <label>Name</label>
-      <input className='from_name' type="text" name="from_name" value={formData.from_name} onChange={handleChange}/>
+      <input required className='from_name' type="text" name="from_name" value={formData.from_name} onChange={handleChange} placeholder='Enter your name'/>
       <label>Email</label>
-      <input className='from_email' type="email" name="from_email" value={formData.from_email} onChange={handleChange}/>
+      <input required className='from_email' type="email" name="from_email" value={formData.from_email} onChange={handleChange} placeholder='Enter your email'/>
       <label>Message</label>
-      <textarea className='msg' name="message" value={formData.message} onChange={handleChange}/>
+      <textarea required className='msg' name="message" value={formData.message} onChange={handleChange} cols="30" rows="10" placeholder='Enter your message'/>
       <input type="submit" value="Submit" />
     </form>
   );

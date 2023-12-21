@@ -8,14 +8,14 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 export default function Contact() {
   return (
     <div id='contact_section'>
-      <div>
+      <div className='contact-text-container'>
         <h1>Contact</h1>
         <p>Want to work together on a project?</p>
       </div>
-      <div>
+      <div className='contactform-container'>
         <ContactForm></ContactForm>
       </div>
-      <div>
+      <div className='contact-some-container'>
         <h2>Connect elsewhere!</h2>
         <div>
           <ul>

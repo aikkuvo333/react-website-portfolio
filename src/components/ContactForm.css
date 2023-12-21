@@ -7,6 +7,12 @@
     border-radius: 4px;
     box-sizing: border-box;
   }
+
+  .from_name::placeholder,
+  .from_email::placeholder,
+.msg::placeholder {
+  color: #a5a5a5; /* Change placeholder text color */
+}
   
   .msg {
     width: 100%;
@@ -20,7 +26,8 @@
   }
   
   .contact_form {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+    border-radius: 10px;
+    background-color: #f6dddd;
+    padding: 30px;
+    
   }

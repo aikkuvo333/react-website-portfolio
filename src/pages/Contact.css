@@ -1,8 +1,29 @@
-.contact {
-    background-image: url('/Users/aivanvo/DX project/react-website-portfolio/public/images/image2.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 20px;
+.contactform-container {
+  box-shadow: rgba(100,100,111,.2) 0 7px 29px 0;
+  background: #fff;
+  padding: 4rem;
+  margin-top: 6rem;
+  max-width: 80%;
+  width: 95%;
+  border-radius: 5px;
+  margin: 3rem auto 0 auto;
   }
+
+/* .contact-some-container {
+
+} */
+
+.contact-text-container > h1 {
+  color: #000000;
+  font-size: 50px;
+  margin-top: -100px;
+}
+
+.contact-text-container > p {
+  margin-top: 8px;
+  color: #000000;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
