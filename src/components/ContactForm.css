@@ -13,7 +13,6 @@
   .from_email::placeholder,
   .msg::placeholder {
     color: #a5a5a5;
-    /* Change placeholder text color */
   }
 
   .msg {
@@ -31,5 +30,5 @@
     border-radius: 10px;
     background-color: #f6dddd;
     padding: 30px;
-
+    
   }

@@ -1,6 +1,6 @@
   .main-container {
     background: url('/Users/aivanvo/DX project/react-website-portfolio/public/images/image-react.jpg') center center/cover no-repeat;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     display: flex;
     flex-direction: column;
