@@ -3,6 +3,7 @@ import '../App';
 import MainSection from '../components/MainSection';
 import Cards from '../components/Cards';
 import Contact from './Contact';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <MainSection></MainSection>
       <Cards></Cards>
       <Contact></Contact>
+      <Footer></Footer>
     </div>
   );
 }
