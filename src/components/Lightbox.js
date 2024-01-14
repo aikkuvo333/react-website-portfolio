@@ -17,23 +17,22 @@ function Lightbox(props) {
           <FontAwesomeIcon icon={faArrowCircleLeft} className="close" onClick={closeLightbox} />
         </div>
         <div className="lightbox-content">
-          <h2>{props.title}</h2>
+          <h3>{props.title}</h3>
           <div className='projectDetails_image'>
             <img alt='Project' src={props.src} />
           </div>
           <div className='projectDetails_description'>
-            <h2 className='projectDetails_contentTitle'>Project Overview</h2>
+            <h3 className='projectDetails_contentTitle'>Project Overview</h3>
             <p>{props.details}</p>
           </div>
           <div className='projectDetails_toolsUsed'>
-            <h2 className='projectDetails_contentTitle'>Tools Used</h2>
+            <h3 className='projectDetails_contentTitle'>Tools Used</h3>
             <div className='skills'>
-              <div className='skills_skill'>{props.skills}</div>
               <div className='skills_skill'>{props.skills}</div>
             </div>
           </div>
           <div className='projectDetails_links'>
-            <h2 className='projectDetails_links'>Website</h2>
+            <h3 className='projectDetails_contentTitle'>Website</h3>
             <a href={props.link} target="_blank" rel="noreferrer" aria-label='open website link'>{props.linkTitle}</a>
           </div>
         </div>
