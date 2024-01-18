@@ -11,7 +11,8 @@ function Cards() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem src='/images/ecolounge.jpg'
-              title='Ecolounge lounger'
+              title='Ecolounge'
+              description='Ecolounge is sun chair made out of recycled ocean plastic waste for the marina of Valencia.'
               label='product design'
               details='
                 Project Scope: 
@@ -29,7 +30,8 @@ function Cards() {
               linkTitle='Instagram'
               skills='product degign' />
             <CardItem src='/images/image2.jpg'
-              title='Chess game application'
+              title='Chess game'
+              description='Chess game is a local web-based chess app'
               label='java'
               details='Project Scope:
               Developing a local web-based chess app in Java using Maven and integrating MariaDB for efficient data storage.
@@ -42,7 +44,8 @@ function Cards() {
               linkTitle='Github'
               skills='java mariadb'/>
             <CardItem src='/images/image2.jpg'
-              title='Pharmacy capacity simulator'
+              title='Pharmacy simulator'
+              description='Pharmacy capacity simulator a testing simulator'
               label='java'
               details='Project Scope:
               Creating a pharmacy capacity testing simulator using Java, CSS, Hibernate, and MariaDBConnector.
@@ -57,20 +60,22 @@ function Cards() {
             <CardItem
               src='images/image2.jpg'
               title='Website Behaviour Tracking'
+              description='Analyzing and reporting User behaviour for a construction engineering company’s website'
               label='google analytics'
               details='Project Scope:
               Analyzing and reporting User behaviour for a website to increase the conversion rate.
               Tasks:
-              -Implemented Google Tag Manager for an construction engineering company’s website -Using Hotjar web analytics tool for visual representations of user interaction heatmaps -Improvement suggestions for the client based on the analytics
+              -Implemented Google Tag Manager for a construction engineering company’s website -Using Hotjar web analytics tool for visual representations of user interaction heatmaps -Improvement suggestions for the client based on the analytics
               -Created a customized Google Studios report for a Google Ad campaign
               -Provided documentation for report and Tag Manager
               Outcome:
               After the recommendations were implemented the conversion rate increased by 65% percent. (from 6 to 10 conversions per month)'
               link=''
               linkTitle=''
-              skills='Google analytics, Hotjar' />
-            <CardItem src='/images/track.png'
-              title='Track Calorie tracker'
+              skills='Google analytics, Hotjar, Freelance' />
+            <CardItem src='/images/track2.png'
+              title='Track'
+              description='Track is a calorie tracking Web-application'
               label='vue'
               details='Project Scope:
               Creating a Vue-based calorie tracking Web-application using JavaScript, HTML, and CSS.
