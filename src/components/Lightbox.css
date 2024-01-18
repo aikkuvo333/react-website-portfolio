@@ -40,6 +40,10 @@
   margin-bottom: 2rem;
 }
 
+p.projectDetails_overview {
+  text-align: left;
+}
+
 /* @media screen and (max-width: 960px) {
   .lightbox {
   }} */

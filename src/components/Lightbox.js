@@ -23,7 +23,7 @@ function Lightbox(props) {
           </div>
           <div className='projectDetails_description'>
             <h3 className='projectDetails_contentTitle'>Project Overview</h3>
-            <p>{props.details}</p>
+            <p className='projectDetails_overview'>{props.details}</p>
           </div>
           <div className='projectDetails_toolsUsed'>
             <h3 className='projectDetails_contentTitle'>Tools Used</h3>
