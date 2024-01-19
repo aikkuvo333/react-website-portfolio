@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import { ContactButton } from './ContactButton';
+import { ContactButton } from '../components/ContactButton';
 import './MainSection.css';
 
 function MainSection() {

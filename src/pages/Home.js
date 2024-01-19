@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App';
-import MainSection from '../components/MainSection';
-import Cards from '../components/Cards';
+import MainSection from './MainSection';
+import Cards from './Cards';
 import Contact from './Contact';
 import Footer from '../components/Footer';
 

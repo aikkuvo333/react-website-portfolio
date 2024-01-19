@@ -1,5 +1,5 @@
 import React from 'react'
-import CardItem from './CardItem';
+import CardItem from '../components/CardItem';
 import './Cards.css';
 
 function Cards() {
@@ -42,7 +42,7 @@ function Cards() {
               User-friendly and accessible local web-based chess application with multi-language options.'
               link=''
               linkTitle=''
-              skills='java, mariadb'/>
+              skills='java, mariadb' />
             <CardItem src='/images/image2.jpg'
               title='Pharmacy simulator'
               description='Pharmacy capacity simulator a testing simulator'
