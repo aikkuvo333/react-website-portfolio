@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes, faBars } from '@fortawesome/free-solid-svg-icons';
-import { ContactButton } from './ContactButton';
+import { ContactBtn } from './ContactBtn';
 import './NavBar.css';
 
 function NavBar() {
@@ -11,20 +11,20 @@ function NavBar() {
   const openMobileMenu = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  const [button, setButton] = useState(true);
-  const showButton = () => {
+  const [btn, setBtn] = useState(true);
+  const showBtn = () => {
     if (window.innerWidth <= 960) {
-      setButton(false)
+      setBtn(false)
     } else {
-      setButton(true)
+      setBtn(true)
     }
   };
 
   useEffect(() => {
-    showButton();
+    showBtn();
   }, []);
 
-  window.addEventListener('resize', showButton);
+  window.addEventListener('resize', showBtn);
 
   const scrollToView = (id) => {
     const sectionById = document.getElementById(id);
@@ -62,7 +62,7 @@ function NavBar() {
               </Link>
             </li>
           </ul>
-          {button && <ContactButton buttonStyle='btn--outline' onClick={() => scrollToView('contact_section')}>Contact</ContactButton>}
+          {btn && <ContactBtn btnStyle='btn--outline' onClick={() => scrollToView('contact_section')}>Contact</ContactBtn>}
         </div>
       </nav>
     </>

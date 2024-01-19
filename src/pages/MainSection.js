@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import { ContactButton } from '../components/ContactButton';
+import { ContactBtn } from '../components/ContactBtn';
 import './MainSection.css';
 
 function MainSection() {
@@ -9,9 +9,9 @@ function MainSection() {
       <h1>AIVAN VO</h1>
       <p>Hello! Welcome to my portfolio</p>
       <div className='main-btns'>
-        <ContactButton className='btns' buttonStyle='btn--outline' buttonSize='btn--large'>
+        <ContactBtn className='btns' btnStyle='btn--outline' btnSize='btn--large'>
           CONTACT ME
-        </ContactButton>
+        </ContactBtn>
       </div>
     </div>
   )
