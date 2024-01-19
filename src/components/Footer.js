@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 export default function Cards() {
-    return (
-      <div className='footer'>
-        <div className='contact-some-container'>
+  return (
+    <div className='footer'>
+      <div className='contact-some-container'>
         <h2>Connect with me!</h2>
         <div className='horizontal-list'>
           <ul>
@@ -23,6 +23,6 @@ export default function Cards() {
           </ul>
         </div>
       </div>
-      </div>
-    );
-  }
+    </div>
+  );
+}

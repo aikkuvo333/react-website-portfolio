@@ -17,8 +17,8 @@ aside {
   position: fixed;
   right: 0;
   top: 0;
-  height: 100%; /* Set height to 100% */
-  overflow-y: auto; /* Enable scrolling */
+  height: 100%;
+  overflow-y: auto;
   z-index: 999999;
   transition: all 0.3s linear 0s;
   will-change: opacity, transform;
@@ -28,7 +28,6 @@ aside {
   background-color: #ffffff;
   padding: 20px;
   border: 1px solid #888;
-  /* Remove overflow-y from lightbox */
 }
 
 .projectDetails_contentTitle {
@@ -78,6 +77,6 @@ body.lightbox-open {
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
   aside {
-    width: 100%; /* Adjust the width for smaller screens */
+    width: 100%;
   }
 }

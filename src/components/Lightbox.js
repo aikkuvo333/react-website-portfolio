@@ -6,19 +6,17 @@ import { faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons';
 function Lightbox(props) {
 
   const closeLightbox = () => {
-    props.onClick(); //call the onclick function from the parent
-    document.body.classList.remove('lightbox-open'); // Remove the class on close
+    props.onClick(); 
+    document.body.classList.remove('lightbox-open'); 
 
   };
 
   useEffect(() => {
-    // Add the class when the component mounts
     document.body.classList.add('lightbox-open');
-    // Remove the class when the component unmounts
     return () => {
       document.body.classList.remove('lightbox-open');
     };
-  }, []); // Empty dependency array ensures this runs only once on mount
+  }, []); 
 
   return (
 
