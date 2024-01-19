@@ -20,7 +20,7 @@ function NavBar() {
     }
   };
 
-  useEffect(() => { //to show button only once (fixing the error)
+  useEffect(() => {
     showButton();
   }, []);
 
