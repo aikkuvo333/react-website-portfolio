@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Lightbox.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons';
@@ -7,36 +7,51 @@ function Lightbox(props) {
 
   const closeLightbox = () => {
     props.onClick(); //call the onclick function from the parent
+    document.body.classList.remove('lightbox-open'); // Remove the class on close
+
   };
 
+  useEffect(() => {
+    // Add the class when the component mounts
+    document.body.classList.add('lightbox-open');
+    // Remove the class when the component unmounts
+    return () => {
+      document.body.classList.remove('lightbox-open');
+    };
+  }, []); // Empty dependency array ensures this runs only once on mount
+
   return (
+
     <div>
       <div className="backdrop" onClick={closeLightbox} />
-      <div className="lightbox">
-        <div className='lightbox-top'>
-          <FontAwesomeIcon icon={faArrowCircleLeft} className="close" onClick={closeLightbox} />
-        </div>
-        <div className="lightbox-content">
-          <h3>{props.title}</h3>
-          <div className='projectDetails_image'>
-            <img alt='Project' src={props.src} />
+      <aside>
+        <div className="lightbox">
+          <div className='lightbox-top'>
+            <FontAwesomeIcon icon={faArrowCircleLeft} className="close" onClick={closeLightbox} />
           </div>
-          <div className='projectDetails_description'>
-            <h3 className='projectDetails_contentTitle'>Project Overview</h3>
-            <p className='projectDetails_overview'>{props.details}</p>
-          </div>
-          <div className='projectDetails_toolsUsed'>
-            <h3 className='projectDetails_contentTitle'>Tools Used</h3>
-            <div className='skills'>
-              <div className='skills_skill'>{props.skills}</div>
+          <div className="lightbox-content">
+            <h2>{props.title}</h2>
+            <div className='projectDetails_image'>
+              <img alt='Project' className='lightbox-image' src={props.src} />
+            </div>
+            <div className='projectDetails_description'>
+              <h4 className='projectDetails_contentTitle'>About</h4>
+              <p className='projectDetails_overview'>{props.details}</p>
+            </div>
+            <div className='projectDetails_toolsUsed'>
+              <h4 className='projectDetails_contentTitle'>Tools Used</h4>
+              <div className='skills'>
+                {props.skills.split(', ').map((skills, index) =>
+                  (<div key={index} className='skills_skill'>{skills}</div>))}
+              </div>
+            </div>
+            <div className='projectDetails_links'>
+              <h4 className='projectDetails_contentTitle'>Website</h4>
+              <a href={props.link} target="_blank" rel="noreferrer" aria-label='open website link'>{props.linkTitle}</a>
             </div>
           </div>
-          <div className='projectDetails_links'>
-            <h3 className='projectDetails_contentTitle'>Website</h3>
-            <a href={props.link} target="_blank" rel="noreferrer" aria-label='open website link'>{props.linkTitle}</a>
-          </div>
         </div>
-      </div>
+      </aside>
     </div>
   );
 };
