@@ -12,7 +12,7 @@ export default function Contact() {
         <p>Want to work together on a project?</p>
       </div>
       <div className='contactform-container'>
-        <ContactForm></ContactForm>
+        <ContactForm/>
       </div>
     </div>
   )

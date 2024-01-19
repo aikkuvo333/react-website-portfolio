@@ -8,10 +8,10 @@ import Footer from '../components/Footer';
 export default function Home() {
   return (
     <div id='home_section'>
-      <MainSection></MainSection>
-      <Cards></Cards>
-      <Contact></Contact>
-      <Footer></Footer>
+      <MainSection/>
+      <Cards/>
+      <Contact/>
+      <Footer/>
     </div>
   );
 }
