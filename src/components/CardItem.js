@@ -24,7 +24,10 @@ function CardItem(props) {
           <div className='cards__item__info'>
             <h5 className='cards__item__text'>{props.title}</h5>
             <p className='cards__item__description'>{props.description}</p>
-            <div className='cards__item__skills'>{props.label}</div>
+            <div className='cards__item__skills'>
+            {props.label.split(', ').map((label, index) => 
+            (<div key={index} className='cards__item__skill'>{label}</div>))}
+            </div>
           </div>
         </Link>
       </li>

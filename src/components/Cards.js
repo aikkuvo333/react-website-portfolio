@@ -28,11 +28,11 @@ function Cards() {
                 The client has incorporated our prototype into their ongoing research and development initiatives, underscoring the projects significance and impact'
               link='https://www.instagram.com/ecolounge_vlc/'
               linkTitle='Instagram'
-              skills='product degign' />
+              skills='product design' />
             <CardItem src='/images/image2.jpg'
               title='Chess game'
               description='Chess game is a local web-based chess app'
-              label='java'
+              label='java, maven, mariadb'
               details='Project Scope:
               Developing a local web-based chess app in Java using Maven and integrating MariaDB for efficient data storage.
               Tasks:
@@ -41,8 +41,8 @@ function Cards() {
               Outcome:
               User-friendly and accessible local web-based chess application with multi-language options.'
               link=''
-              linkTitle='Github'
-              skills='java mariadb'/>
+              linkTitle=''
+              skills='java, mariadb'/>
             <CardItem src='/images/image2.jpg'
               title='Pharmacy simulator'
               description='Pharmacy capacity simulator a testing simulator'
@@ -76,7 +76,7 @@ function Cards() {
             <CardItem src='/images/track2.png'
               title='Track'
               description='Track is a calorie tracking Web-application'
-              label='vue'
+              label='vue, javascript, html, css'
               details='Project Scope:
               Creating a Vue-based calorie tracking Web-application using JavaScript, HTML, and CSS.
               Tasks:
