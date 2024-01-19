@@ -16,7 +16,7 @@
 }
 
 .projects {
-  background-image: url('/Users/aivanvo/DX project/react-website-portfolio/public/images/image2.jpg');
+  background-image: url('../public/images/image2.jpg');
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
