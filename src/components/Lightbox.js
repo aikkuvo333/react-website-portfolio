@@ -38,7 +38,7 @@ function Lightbox(props) {
               <p className='projectDetails_overview'>{props.details}</p>
             </div>
             <div className='projectDetails_toolsUsed'>
-              <h4 className='projectDetails_contentTitle'>Tools Used</h4>
+              <h4 className='projectDetails_contentTitle'>Skills</h4>
               <div className='skills'>
                 {props.skills.split(', ').map((skills, index) =>
                   (<div key={index} className='skills_skill'>{skills}</div>))}
