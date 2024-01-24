@@ -28,7 +28,7 @@ function Cards() {
                 The client has incorporated our prototype into their ongoing research and development initiatives, underscoring the projects significance and impact'
               link='https://www.instagram.com/ecolounge_vlc/'
               linkTitle='Instagram'
-              skills='product design' />
+              skills='Product design' />
             <CardItem src='/images/image2.jpg'
               title='Chess game'
               description='Chess game is a local web-based chess app'
@@ -42,7 +42,7 @@ function Cards() {
               User-friendly and accessible local web-based chess application with multi-language options.'
               link=''
               linkTitle=''
-              skills='java, mariadb' />
+              skills='Java, MariaDB' />
             <CardItem src='/images/image2.jpg'
               title='Pharmacy simulator'
               description='Pharmacy capacity simulator a testing simulator'
