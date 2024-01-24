@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import './Lightbox.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons';
+import { faCircleChevronLeft, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
 function Lightbox(props) {
 
   const closeLightbox = () => {
-    props.onClick(); 
-    document.body.classList.remove('lightbox-open'); 
+    props.onClick();
+    document.body.classList.remove('lightbox-open');
 
   };
 
@@ -16,7 +16,7 @@ function Lightbox(props) {
     return () => {
       document.body.classList.remove('lightbox-open');
     };
-  }, []); 
+  }, []);
 
   return (
 
@@ -25,7 +25,8 @@ function Lightbox(props) {
       <aside>
         <div className="lightbox">
           <div className='lightbox-top'>
-            <FontAwesomeIcon icon={faArrowCircleLeft} className="close" onClick={closeLightbox} />
+            <FontAwesomeIcon icon={faCircleChevronLeft} className="return" onClick={closeLightbox}/>
+            <div className="separator"/>          
           </div>
           <div className="lightbox-content">
             <h2>{props.title}</h2>
@@ -49,6 +50,10 @@ function Lightbox(props) {
             </div>
           </div>
         </div>
+        <a href={props.link} className='projectDetails_openProject' target='_blank' rel='noreferrer' aria-label='open website link'>
+          Open project
+          <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='openLink'/>
+        </a>
       </aside>
     </div>
   );
