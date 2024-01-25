@@ -11,9 +11,7 @@ export default function Contact() {
         <h1>Contact</h1>
         <p>Want to work together on a project?</p>
       </div>
-      <div className='contactform-container'>
         <ContactForm/>
-      </div>
     </div>
   )
 }
