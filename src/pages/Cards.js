@@ -29,7 +29,7 @@ function Cards() {
               link='https://www.instagram.com/ecolounge_vlc/'
               linkTitle='Instagram'
               skills='Product design' />
-            <CardItem src='/images/image2.jpg'
+            <CardItem src='/images/shakki.png'
               title='Chess game'
               description='Chess game is a local web-based chess app'
               label='java, maven, mariadb'
@@ -43,7 +43,7 @@ function Cards() {
               link=''
               linkTitle=''
               skills='Java, MariaDB' />
-            <CardItem src='/images/image2.jpg'
+            <CardItem src='/images/apteekki.png'
               title='Pharmacy simulator'
               description='Pharmacy capacity simulator a testing simulator'
               label='java'
@@ -58,7 +58,7 @@ function Cards() {
               linkTitle='Github'
               skills='Java, CSS, Hibernate, MariaDBConnector' />
             <CardItem
-              src='images/image2.jpg'
+              src='images/analytics.png'
               title='Website Behaviour Tracking'
               description='Analyzing and reporting User behaviour for a construction engineering company’s website'
               label='google analytics'
@@ -73,7 +73,7 @@ function Cards() {
               link=''
               linkTitle=''
               skills='Google analytics, Hotjar, Freelance' />
-            <CardItem src='/images/track2.png'
+            <CardItem src='/images/track.png'
               title='Track'
               description='Track is a calorie tracking Web-application'
               label='vue, javascript, html, css'
