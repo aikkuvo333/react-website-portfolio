@@ -17,7 +17,6 @@ function Lightbox(props) {
       setExistingAttribute(true);
     }
     document.body.classList.add('lightbox-open');
-    document.querySelector('aside').classList.add('appear');
     return () => {
       document.body.classList.remove('lightbox-open');
     };
