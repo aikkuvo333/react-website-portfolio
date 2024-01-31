@@ -22,9 +22,9 @@ export const ContactBtn = ({
 
     return (
         <Link className='btn-mobile'>
-            <btn className={`btn ${checkBtnStyle} ${checkBtnSize}`} onClick={onClick || scrollToContactForm} type={type}>
+            <button className={`btn ${checkBtnStyle} ${checkBtnSize}`} onClick={onClick || scrollToContactForm} type={type}>
                 {children}
-            </btn>
+            </button>
         </Link>
     )
 };
