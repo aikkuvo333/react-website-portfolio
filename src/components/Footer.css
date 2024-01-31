@@ -32,3 +32,11 @@
 .horizontal-list li {
     margin-right: 10px;
 }
+
+.copyright {
+    position: absolute;
+    right: 50px;
+    max-width: 120rem;
+    margin: auto;
+    font-size: small;
+}

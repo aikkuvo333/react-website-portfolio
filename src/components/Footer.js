@@ -22,6 +22,7 @@ export default function Cards() {
             </li>
           </ul>
         </div>
+        <div className="copyright">Copyright © 2024 Aivan Vo. All Rights Reserved.</div>
       </div>
     </div>
   );
