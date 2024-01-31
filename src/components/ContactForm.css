@@ -28,7 +28,7 @@
 
   .contact_form {
     border-radius: 10px;
-    background-color: #e4e4e4;
+    background-color: #aeb3c64d;
     padding: 30px;
     box-shadow: rgba(100, 100, 111, .2) 0 7px 29px 0;
     max-width: 80%;
@@ -37,5 +37,10 @@
 
   .btn--form {
     color: black;
-    border: 1px solid #000;;
+    border: 1px solid #000;
+  }
+
+  .success-message {
+    color: green;
+    margin-top: 10px;
   }

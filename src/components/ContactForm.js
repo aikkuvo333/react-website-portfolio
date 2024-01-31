@@ -9,6 +9,7 @@ export const ContactForm = () => {
     from_email: '',
     message: '',
   });
+  const [submitSuccess, setSubmitSuccess] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -22,6 +23,9 @@ export const ContactForm = () => {
           from_email: '',
           message: '',
         });
+
+        setSubmitSuccess(true);
+
       }, (error) => {
         console.log(error.text);
       });
@@ -40,7 +44,8 @@ export const ContactForm = () => {
       <input required className='from_email' type="email" name="from_email" value={formData.from_email} onChange={handleChange} placeholder='Enter your email' />
       <label>Message</label>
       <textarea required className='msg' name="message" value={formData.message} onChange={handleChange} cols="30" rows="10" placeholder='Enter your message' />
-      <button class="btn btn--outline btn--medium btn--form" type="submit" value="Submit">Submit</button>
+      <button class="btn btn--outline btn--medium btn--form" type="submit" value="Submit">Send message</button>
+      {submitSuccess && <p className="success-message">Message sent successfully!</p>}
     </form>
   );
 };
