@@ -40,7 +40,7 @@ export const ContactForm = () => {
       <input required className='from_email' type="email" name="from_email" value={formData.from_email} onChange={handleChange} placeholder='Enter your email' />
       <label>Message</label>
       <textarea required className='msg' name="message" value={formData.message} onChange={handleChange} cols="30" rows="10" placeholder='Enter your message' />
-      <input type="submit" value="Submit" />
+      <button class="btn btn--outline btn--medium btn--form" type="submit" value="Submit">Submit</button>
     </form>
   );
 };
