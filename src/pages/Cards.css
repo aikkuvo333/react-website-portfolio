@@ -5,7 +5,7 @@
 
 h1 {
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 p {
@@ -94,9 +94,9 @@ p {
 
 h5.cards__item__text {
   color: #000000;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 30px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 p.cards__item__description {
