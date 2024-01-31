@@ -9,17 +9,12 @@
 }
 
 aside {
-  animation-name: fadeLeft;
-  animation-duration: 0.5s;
-  animation-fill-mode: both;
   position: fixed;
   right: 0;
   top: 0;
   height: 100%;
   overflow-y: auto;
   z-index: 999999;
-  transition: all 0.3s linear 0s;
-  will-change: opacity, transform;
   width: 34em;
 }
 
@@ -80,9 +75,9 @@ h4 {
   box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17)
 }
 
-body.lightbox-open {
+/* body.lightbox-open {
   overflow: hidden;
-}
+} */
 
 .projectDetails_openProject {
   display: block;
@@ -108,7 +103,7 @@ body.lightbox-open {
 
 .separator {
   border-top: 1px solid #ccc;
-  margin: 10px 0; 
+  margin: 10px 0;
 }
 
 .projectDetails_image {
