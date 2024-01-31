@@ -112,6 +112,7 @@ p.cards__item__description {
   bottom: 15px;
   text-transform: uppercase;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .cards__item__skill {
@@ -120,7 +121,7 @@ p.cards__item__description {
   border-radius: 5px;
   color: #fff;
   font-size: 15px;
-  margin-right: 0.4rem;
+  margin: 0.4rem 0.4rem 0 0;
 }
 
 @media only screen and (min-width: 1200px) {
