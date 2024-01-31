@@ -8,9 +8,9 @@ function MainSection() {
     <div className='main-container'>
       <h1>AIVAN VO</h1>
       <p>Hello! Welcome to my portfolio. 
-        I am a student of Information and Communication Technology, specializing in software production. 
-        I am an enthusiastic, solution-oriented learner with experience in various industry projects. 
-        I have particular expertise in creating automated tests, automation testing, as well as JavaScript, Java, and SQL.</p>
+        I am a final year student of Information and Communication Technology, specializing in software production. 
+
+        I have particular expertise in  JavaScript, Java as well as creating automation testing.</p>
       <div className='main-btns'>
         <ContactBtn className='btns' btnStyle='btn--outline' btnSize='btn--large'>
           CONTACT ME
