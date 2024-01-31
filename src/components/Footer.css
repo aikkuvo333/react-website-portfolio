@@ -1,3 +1,7 @@
+.contact-some-container>h2 {
+    font-size: 1em;
+}
+
 .footer {
     background: #272727;
     color: #fff;
@@ -12,7 +16,7 @@
 
 .some-icon {
     color: rgb(255, 255, 255);
-    font-size: 36px;
+    font-size: 30px;
 }
 
 .horizontal-list {
@@ -26,5 +30,5 @@
 }
 
 .horizontal-list li {
-    margin-right: 20px;
+    margin-right: 10px;
 }
