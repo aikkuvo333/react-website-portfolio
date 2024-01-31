@@ -28,8 +28,14 @@ function NavBar() {
 
   const scrollToView = (id) => {
     const sectionById = document.getElementById(id);
+    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+
     if (sectionById) {
-      sectionById.scrollIntoView({ behavior: 'smooth' });
+      //Reduce the height of the navbar from the element, in order to not scroll too low
+      window.scrollTo({
+        top: sectionById.offsetTop - navbarHeight,
+        behavior: 'smooth',
+      });
     } else {
       console.log("Cant scroll to " + id + "view")
     }
