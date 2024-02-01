@@ -40,3 +40,9 @@
     margin: auto;
     font-size: small;
 }
+
+@media screen and (max-width: 768px) {
+    .copyright {
+        margin: 1.5em 0 0 0;
+    }
+}

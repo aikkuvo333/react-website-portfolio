@@ -13,6 +13,8 @@ p {
   color: #000000;
   font-size: 16px;
   text-align: center;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 .cards__container {
@@ -154,5 +156,40 @@ p.cards__item__description {
 @media only screen and (max-width: 1024px) {
   .cards__item {
     margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cards__items {
+    max-width: 100%;
+  }
+
+  .cards__item__link {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .cards__item__pic-wrap {
+    width: 100%;
+  }
+
+  .cards__item__info {
+    max-width: 100%;
+  }
+
+  p {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .cards__item__skills {
+    position: unset;
+    margin-top: 1em;
+  }
+
+  p.cards__item__description {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
