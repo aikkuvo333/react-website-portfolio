@@ -12,7 +12,7 @@
 
   .main-container>h1 {
     color: #fff;
-    font-size: 50px;    
+    font-size: 3.5em;
     letter-spacing: 9.9px;
   }
 
@@ -20,7 +20,7 @@
     margin-top: 8px;
     color: #fff;
     font-size: 15px;
-    padding: 0 300px;
+    padding: 0 20em;
     line-height: 1.5;
   }
 
@@ -34,7 +34,7 @@
 
   @media screen and (max-width: 960px) {
     .main-container>h1 {
-      font-size: 70px;
+      font-size: 3.5em;
       margin-top: -150px;
     }
   }
@@ -46,7 +46,7 @@
     }
 
     .main-container>p {
-      font-size: 30px;
+      padding: 0 2em;
     }
 
     .btn-mobile {
