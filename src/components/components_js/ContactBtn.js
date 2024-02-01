@@ -16,7 +16,13 @@ export const ContactBtn = ({
     const checkBtnSize = SIZES.includes(btnSize) ? btnSize : SIZES[0];
 
     const scrollToContactForm = () => {
-        document.getElementById('contact_section').scrollIntoView({ behavior: 'smooth' });
+        const sectionById = document.getElementById('contact_section');
+        const navbarHeight = document.querySelector('.navbar').offsetHeight;
+
+        window.scrollTo({
+            top: sectionById.offsetTop - navbarHeight,
+            behavior: 'smooth',
+        });
     };
 
 
