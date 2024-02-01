@@ -13,6 +13,9 @@ p {
   color: #000000;
   font-size: 16px;
   text-align: center;
+}
+
+.cards__item__description>p {
   margin-left: 2em;
   margin-right: 2em;
 }
@@ -94,6 +97,11 @@ p {
   max-width: 40%;
 }
 
+.cards__item__info {
+  display: flex;
+  flex-direction: column;
+}
+
 h5.cards__item__text {
   color: #000000;
   font-size: 1.5rem;
@@ -109,9 +117,16 @@ p.cards__item__description {
   text-align: left;
 }
 
-.cards__item__skills {
+/* .cards__item__skills {
   position: absolute;
   bottom: 15px;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+.cards__item__skills {
+  margin-top: auto; /* Push the skills to the bottom */
   text-transform: uppercase;
   display: flex;
   flex-wrap: wrap;
