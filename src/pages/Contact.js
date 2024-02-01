@@ -1,7 +1,6 @@
 import React from 'react';
 import '../App.js';
 import ContactForm from '../components/ContactForm.js';
-import './Contact.css';
 import './Cards.css';
 
 export default function Contact() {
