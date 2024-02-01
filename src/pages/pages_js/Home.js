@@ -1,9 +1,9 @@
 import React from 'react';
-import '../App';
+import '../../App';
 import MainSection from './MainSection';
 import Cards from './Cards';
 import Contact from './Contact';
-import Footer from '../components/Footer';
+import Footer from '../../components/components_js/Footer';
 
 export default function Home() {
   return (

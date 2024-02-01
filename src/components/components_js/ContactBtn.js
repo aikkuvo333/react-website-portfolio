@@ -1,5 +1,5 @@
 import React from 'react';
-import './ContactBtn.css';
+import '../components_css/ContactBtn.css';
 import { Link } from 'react-router-dom';
 
 const STYLES = ['btn--white', 'btn--outline'];

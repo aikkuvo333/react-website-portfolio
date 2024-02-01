@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './Lightbox.css';
+import '../components_css/Lightbox.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleChevronLeft, faArrowUpRightFromSquare, faEarthEurope } from '@fortawesome/free-solid-svg-icons';
 

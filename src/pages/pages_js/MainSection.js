@@ -1,7 +1,7 @@
 import React from 'react';
-import '../App.css';
-import { ContactBtn } from '../components/ContactBtn';
-import './MainSection.css';
+import '../../App.css';
+import { ContactBtn } from '../../components/components_js/ContactBtn';
+import '../pages_css/MainSection.css';
 
 function MainSection() {
   return (
