@@ -45,16 +45,12 @@
       margin-top: -100px;
     }
 
-    /* .main-container>p {
-      padding: 0 15em;
-    } */
-
     .btn-mobile {
       display: block;
       text-decoration: none;
     }
 
     .btn {
-      width: 100%;
+      width: inherit;
     }
   }
