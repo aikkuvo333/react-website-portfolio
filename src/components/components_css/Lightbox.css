@@ -75,9 +75,9 @@ h4 {
   box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17)
 }
 
-/* body.lightbox-open {
+body.lightbox-open { /*disable scrolling the background*/
   overflow: hidden;
-} */
+}
 
 .projectDetails_openProject {
   display: block;
