@@ -20,7 +20,7 @@
     margin-top: 8px;
     color: #fff;
     font-size: 15px;
-    padding: 0 20em;
+    /* padding: 0 20em; */
     line-height: 1.5;
   }
 
@@ -45,9 +45,9 @@
       margin-top: -100px;
     }
 
-    .main-container>p {
+    /* .main-container>p {
       padding: 0 15em;
-    }
+    } */
 
     .btn-mobile {
       display: block;
