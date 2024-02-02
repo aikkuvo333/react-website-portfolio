@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes, faBars } from '@fortawesome/free-solid-svg-icons';
 import { ContactBtn } from './ContactBtn';
 import '../components_css/NavBar.css';
+import smoothscroll from 'smoothscroll-polyfill';
 
 function NavBar() {
 
@@ -31,9 +32,12 @@ function NavBar() {
     const navbarHeight = document.querySelector('.navbar').offsetHeight;
 
     if (sectionById) {
-      //Reduce the height of the navbar from the element, in order to not scroll too low
+      
+      smoothscroll.polyfill(); //enable smooth scrolling in Safari 6+
+
       window.scrollTo({
-        top: sectionById.offsetTop - navbarHeight,
+        top: sectionById.offsetTop - navbarHeight, //Reduce the height of the navbar from the element, in order to not scroll too low
+
         behavior: 'smooth',
       });
     } else {
