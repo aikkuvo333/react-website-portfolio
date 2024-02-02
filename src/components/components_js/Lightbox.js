@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../components_css/Lightbox.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleChevronLeft, faArrowUpRightFromSquare, faEarthEurope } from '@fortawesome/free-solid-svg-icons';
+import { faCircleChevronLeft, faEarthEurope } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 function Lightbox(props) {
@@ -63,10 +63,6 @@ function Lightbox(props) {
             </div>
           </div>
         </div>
-        {existingAttribute && <a href={props.link} className='projectDetails_openProject' target='_blank' rel='noreferrer' aria-label='open website link'>
-          Open project
-          <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='openLink' />
-        </a>}
       </aside>
     </div>
   );
