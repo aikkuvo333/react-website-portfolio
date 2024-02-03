@@ -13,10 +13,10 @@ function Lightbox(props) {
   };
 
   useEffect(() => {
-    // Check if the attribute exists in props
-    if (props.link) {
+    if (props.link || props.imgtext) {
       setExistingAttribute(true);
     }
+   
     document.body.classList.add('lightbox-open');
     return () => {
       document.body.classList.remove('lightbox-open');
@@ -40,7 +40,8 @@ function Lightbox(props) {
             <h2>{props.title}</h2>
             <div className='projectDetails'>
               <div className='projectDetails_image'>
-                <img alt='Project' className='lightbox-image' src={props.src} />
+                <img alt='Project' className='lightbox-image' src={props.src}/>
+                {existingAttribute && <span className='image-source'>{props.imgtext}</span>}
               </div>
               <div className='empty_space'></div>
               <div className='projectDetails_info'>

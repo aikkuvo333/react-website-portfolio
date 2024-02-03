@@ -23,7 +23,7 @@ function Cards() {
               link='https://www.instagram.com/ecolounge_vlc/'
               linkTitle='Instagram'
               skills='Product design' />
-            <CardItem src='/images/shakki.png'
+            <CardItem src='/images/shakki2.png'
               title='Chess game'
               description='Local web-based chess app designed for players seeking precise move tracking'
               label='java, maven, mariadb'
@@ -46,6 +46,7 @@ function Cards() {
               skills='Java, CSS, Hibernate, MariaDBConnector' />
             <CardItem
               src='images/analytics.png'
+              imgtext='Image source: https://www.semrush.com/blog/google-analytics-dashboard/'
               title='Website Behaviour Tracking'
               description='Analyzing and reporting user behaviour for a website to increase the conversion rate.'
               label='google analytics'
