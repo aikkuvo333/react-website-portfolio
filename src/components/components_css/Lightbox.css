@@ -11,7 +11,7 @@
 aside {
   position: fixed;
   overflow-y: auto;
-  z-index: 999999;
+  z-index: 1;
   right: 10%;
   left: 10%;
   top: calc(4rem + 1rem);
