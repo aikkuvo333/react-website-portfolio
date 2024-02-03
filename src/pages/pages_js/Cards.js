@@ -9,6 +9,7 @@ function Cards() {
         <h1>Projects</h1>
         <div className='cards__separator'></div>
         <p>Here you can find some of my personal as well as university projects</p>
+        <p>Take a look at my <b><a href="/files/cv_en.pdf" target="_blank">resume</a></b>! </p>
       </div>
       <div className='cards__container'>
         <div className='cards__wrapper'>
