@@ -153,6 +153,10 @@ a {
   text-decoration: none;
 }
 
+.image-source {
+  font-size: xx-small;
+}
+
 /* Media query for smaller screens */
 @media screen and (max-width: 960px) {
   aside {
