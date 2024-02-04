@@ -5,7 +5,8 @@ import { faCircleChevronLeft, faEarthEurope } from '@fortawesome/free-solid-svg-
 import { Link } from 'react-router-dom';
 
 function Lightbox(props) {
-  const [existingAttribute, setExistingAttribute] = useState(false);
+  const [existingWebsite, setExistingWebsite] = useState(false);
+  const [existingImgText, setExistingImgText] = useState(false);
 
   const closeLightbox = () => {
     props.onClick();
@@ -13,10 +14,14 @@ function Lightbox(props) {
   };
 
   useEffect(() => {
-    if (props.link || props.imgtext) {
-      setExistingAttribute(true);
+    if (props.link) {
+      setExistingWebsite(true);
     }
-   
+
+    if (props.imgtext) {
+      setExistingImgText(true);
+    }
+
     document.body.classList.add('lightbox-open');
     return () => {
       document.body.classList.remove('lightbox-open');
@@ -37,11 +42,14 @@ function Lightbox(props) {
             <div className="separator" />
           </div>
           <div className="lightbox-content">
-            <h2>{props.title}</h2>
+            <div className='projectDetails_header'>
+              <h2>{props.title}</h2>
+              <span className='projectDetails_type'>{props.type}</span>
+            </div>
             <div className='projectDetails'>
               <div className='projectDetails_image'>
-                <img alt='Project' className='lightbox-image' src={props.src}/>
-                {existingAttribute && <span className='image-source'>{props.imgtext}</span>}
+                <img alt='Project' className='lightbox-image' src={props.src} />
+                {existingImgText && <span className='image-source'>{props.imgtext}</span>}
               </div>
               <div className='empty_space'></div>
               <div className='projectDetails_info'>
@@ -56,7 +64,7 @@ function Lightbox(props) {
                       (<div key={index} className='skills_skill'>{skills}</div>))}
                   </div>
                 </div>
-                {existingAttribute && <div className='projectDetails_links'>
+                {existingWebsite && <div className='projectDetails_links'>
                   <h4 className='projectDetails_contentTitle'> <FontAwesomeIcon icon={faEarthEurope} /> Website</h4>
                   <a href={props.link} target="_blank" rel="noreferrer" aria-label='open website link'>{props.linkTitle}</a>
                 </div>}

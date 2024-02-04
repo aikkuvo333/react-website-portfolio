@@ -116,8 +116,8 @@ body.lightbox-open {
 }
 
 .projectDetails_image {
-  padding: 15px 0;
-  border-radius: 10px;
+  padding: 0 15px 15px 0;
+  margin-top: -15px;
 }
 
 a {
@@ -157,6 +157,11 @@ a {
   font-size: xx-small;
 }
 
+.projectDetails_type {
+  font-size: smaller;
+  color: #757575;
+}
+
 /* Media query for smaller screens */
 @media screen and (max-width: 960px) {
   aside {
@@ -170,7 +175,12 @@ a {
     display: flex;
     flex-direction: column;
   }
-  
+
+  .projectDetails_image {
+    padding: 15px 15px 15px 0;
+    margin-top: 0;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -190,6 +200,7 @@ a {
     display: flex;
     flex-direction: column;
   }
+
 
 
 }
