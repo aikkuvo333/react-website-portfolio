@@ -1,7 +1,0 @@
-version: 1
-backend:
-  phases:
-    preBuild:
-      commands:
-        - mkdir -p public/files
-        - cp /Users/aivanvo/DX project/react-website-portfolio/public/files/cv_en.pdf public/files/
