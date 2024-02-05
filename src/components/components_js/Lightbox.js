@@ -26,7 +26,7 @@ function Lightbox(props) {
     return () => {
       document.body.classList.remove('lightbox-open');
     };
-  }, [props.link]);
+  }, [props.link, props.imgtext]);
 
   return (
 
