@@ -55,7 +55,16 @@ function Lightbox(props) {
               <div className='projectDetails_info'>
                 <div className='projectDetails_description'>
                   <h4 className='projectDetails_contentTitle'>About</h4>
-                  <p className='projectDetails_overview'>{props.details}</p>
+                  <div className='projectDetails_responsibilities'>
+                    <p className='projectDetails_overview'>{props.details_overview}</p>
+                    <div className='responsibilites'>
+                      <span className='responsibilites_header'>{props.responsibilites_header}</span>
+                      <div className='bulletpoints'>
+                        {props.details_responsibilities.split(', ').map((details_responsibilities, index) =>
+                          (<li key={index} className='projectDetails_responsibilities'>{details_responsibilities}</li>))}
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div className='projectDetails_toolsUsed'>
                   <h4 className='projectDetails_contentTitle'>Skills</h4>

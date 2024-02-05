@@ -31,7 +31,7 @@ function CardItem(props) {
           </div>
         </Link>
       </li>
-      {showLightbox && <Lightbox onClick={closeLightbox} title={props.title} src={props.src} details={props.details} link={props.link} linkTitle={props.linkTitle} skills={props.skills} imgtext={props.imgtext} type={props.type}></Lightbox>}
+      {showLightbox && <Lightbox onClick={closeLightbox} title={props.title} src={props.src} details_overview={props.details_overview} details_responsibilities={props.details_responsibilities} responsibilites_header={props.responsibilites_header} link={props.link} linkTitle={props.linkTitle} skills={props.skills} imgtext={props.imgtext} type={props.type}></Lightbox>}
     </>
   );
 }

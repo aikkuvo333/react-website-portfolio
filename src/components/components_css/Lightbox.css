@@ -58,6 +58,7 @@ aside {
 p.projectDetails_overview {
   text-align: left;
   font-size: 15px;
+  margin-bottom: 2em;
 }
 
 h4 {
@@ -159,6 +160,20 @@ a {
 .projectDetails_type {
   font-size: smaller;
   color: #757575;
+}
+
+.projectDetails_responsibilities {
+  text-align: left;
+  font-size: 15px;
+}
+
+.bulletpoints {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.responsibilites_header {
+
 }
 
 /* Media query for smaller screens */
