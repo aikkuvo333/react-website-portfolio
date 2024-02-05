@@ -54,7 +54,7 @@ function Lightbox(props) {
               <div className='empty_space'></div>
               <div className='projectDetails_info'>
                 <div className='projectDetails_description'>
-                  <h4 className='projectDetails_contentTitle'>About</h4>
+                  <h4 className='projectDetails_contentTitle_About'>About</h4>
                   <div className='projectDetails_responsibilities'>
                     <p className='projectDetails_overview'>{props.details_overview}</p>
                     <div className='responsibilites'>

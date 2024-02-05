@@ -55,10 +55,14 @@ aside {
   margin-bottom: 2rem;
 }
 
+.projectDetails_toolsUsed {
+  margin-bottom: 2rem;
+}
+
 p.projectDetails_overview {
   text-align: left;
   font-size: 15px;
-  margin-bottom: 2em;
+  margin-bottom: revert;
 }
 
 h4 {
@@ -116,7 +120,7 @@ body.lightbox-open {
 }
 
 .projectDetails_image {
-  padding: 0 0 15px 0;
+  padding: 2.5em 0 0 0;
   width: fit-content;
 }
 
@@ -131,7 +135,10 @@ a {
 .projectDetails {
   display: flex;
   flex-direction: row;
-  align-items: center;
+}
+
+h4.projectDetails_contentTitle_About {
+  margin-bottom: 0;
 }
 
 .lightbox-return {
