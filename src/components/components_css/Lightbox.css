@@ -128,10 +128,6 @@ a {
   text-decoration: none;
 }
 
-/* .lightbox-content>h2 {
-  font-size: larger;
-} */
-
 .projectDetails {
   display: flex;
   flex-direction: row;
