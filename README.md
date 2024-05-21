@@ -1,7 +1,8 @@
 # My Portfolio Website
 
 This project is a personal portfolio website built using React, showcasing my skills, projects, and experiences.
-https://www.aivanvo.fi 
+
+Check out my portfolio at https://www.aivanvo.fi 
 
 ## Table of Contents
 
